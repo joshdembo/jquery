@@ -1,0 +1,122 @@
+html,body{
+      height: 60%;
+    }
+    body{
+      margin: 1;
+      background-color: grey;
+    }
+
+
+    .container {
+      display: grid;
+      height: 100%;
+      /*grid-template-columns: 1fr; */
+      grid-template-rows: 300px 20px 1fr 1fr 80px;
+
+      /* Define your template page areas */
+      grid-template-areas:
+      			"header  header  header"
+                "article article article"
+                "aside   aside   aside"
+                "footer  footer  footer"; 
+
+    }
+
+
+
+    article {
+       grid-area: article;
+      background-color: red;
+       margin: 10px;
+       padding: 10px;
+    }
+
+    aside {
+      grid-area: aside;
+      background-color: red;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: red;
+        text-align: center;
+        line-height: 30px;
+
+    }
+ 
+    footer {
+      grid-area: footer;
+       background-color: red;
+       font-style: italic;
+       color: white;
+      margin-top: 20px;
+    }
+header{
+  grid-area: header;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+   font-family: roboto;
+  font-weight: 100;
+  font-size: 60px; 
+  text-align: center;
+  padding-top: 60px
+
+  
+  }
+
+
+  @font-face
+{font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 100;
+}
+
+@font-face{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
+
+p{
+  font-family: roboto;
+  font-weight: 100;
+  font-size: 15px; 
+}
+
+h1{
+  font-family:  'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.addText{
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  color: black;
+  margin-top: 50px;
+  font-family: roboto;
+  font-weight: 100;
+  font-size: 15px; 
+  text-align: center;
+  padding-top: 10px
+}
+
+img{
+    background-image: url("../../pancake.jpg");
+    width: 100px;
+    height: 100px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
